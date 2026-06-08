@@ -1,1 +1,154 @@
-<h1>Github pages</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Península | Tu momento ideal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Personalización del Negro Oxford y acentos */
+        body {
+            background-color: #121214; /* Negro Oxford de fondo */
+            color: #f8f9fa; /* Letras blancas/gris claro */
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        /* Color de acento para botones secundarios y enlaces (Verde esmeralda moderno) */
+        .text-accent {
+            color: #00ff88 !important;
+        }
+        
+        .bg-accent-soft {
+            background-color: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+        }
+
+        /* Estilo para el menú pegajoso */
+        header {
+            background-color: #1a1a1e !important;
+            border-bottom: 1px solid #29292e;
+        }
+
+        /* Inputs del formulario adaptados al modo oscuro */
+        .form-dark {
+            background-color: #1a1a1e;
+            border: 1px solid #3a3a42;
+            color: #ffffff;
+        }
+        .form-dark:focus {
+            background-color: #1a1a1e;
+            border-color: #00ff88;
+            color: #ffffff;
+            box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
+        }
+
+        /* Botón de WhatsApp personalizado */
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Sección Quiénes Somos */
+        #quienes-somos {
+            background-color: #1a1a1e;
+            border-top: 1px solid #29292e;
+            border-bottom: 1px solid #29292e;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="sticky-top py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="navbar-brand text-white fw-bold fs-4 m-0">
+                ✨ TuLogo<span class="text-accent">.</span>
+            </a>
+            <nav>
+                <a href="#quienes-somos" class="text-decoration-none text-secondary-emphasis link-light fw-medium">¿Quiénes somos?</a>
+            </nav>
+        </div>
+    </header>
+
+   <section class="position-relative overflow-hidden py-5 d-flex align-items-center" style="min-height: 80vh;">
+        
+        <video autoplay loop muted playsinline class="position-absolute top-50 start-50 translate-middle" style="min-width: 100%; min-height: 100%; width: auto; height: auto; object-fit: cover; z-index: 1;">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+        </video>
+
+        <div class="video-overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(18, 18, 20, 0.75); z-index: 2;"></div>
+        
+        <div class="container text-center position-relative py-5" style="z-index: 3;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <span class="badge bg-accent-soft rounded-pill px-3 py-2 mb-4 text-uppercase tracking-wider fw-semibold">
+                        📍 Cobertura en toda la Península Ibérica
+                    </span>
+                    
+                    <h1 class="display-4 fw-bold text-white mb-3">
+                        Hacemos realidad tu evento, <br class="d-none d-md-block"> sin complicaciones.
+                    </h1>
+                    
+                    <p class="lead text-light mb-5 fs-5 opacity-90">
+                        Organización integral adaptada a ti. Diseñamos momentos inolvidables con tarifas transparentes que sí te puedes permitir.
+                    </p>
+                    
+                    <div class="row justify-content-center g-3">
+                        <div class="col-md-7 col-lg-6">
+                            
+                            <form action="#" method="POST" class="d-flex flex-column flex-sm-row gap-2 mb-3">
+                                <input type="text" class="form-control form-dark py-3 px-4" placeholder="Tu teléfono o email" required>
+                                <button type="submit" class="btn btn-light fw-bold px-4 py-3 text-nowrap">Te llamamos gratis</button>
+                            </form>
+                            
+                            <div class="text-light small opacity-75 my-3">— o si lo prefieres —</div>
+                            
+                            <a href="https://wa.me/34123456789?text=Hola,%20quiero%20información%20para%20un%20evento." class="btn btn-whatsapp d-inline-flex align-items-center gap-2 px-4 py-3 rounded-3 w-100 justify-content-center shadow" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 10.64 0H10.64a8.05 8.05 0 0 0-7.61 5.084c-.459 1.38-.344 2.887.318 4.161l-.886 3.238 3.32-.871A8.04 8.04 0 0 0 10.64 16h.002a8.05 8.05 0 0 0 7.61-5.084 7.85 7.85 0 0 0-1.252-6.59M10.64 14.757a6.73 6.73 0 0 1-3.419-.933l-.245-.145-2.536.666.678-2.477-.16-.253a6.73 6.73 0 0 1-1.028-3.64c0-3.717 3.03-6.733 6.76-6.733a6.73 6.73 0 0 1 4.778 1.975 6.73 6.73 0 0 1 1.982 4.759c0 3.717-3.03 6.733-6.76 6.733m3.454-4.735c-.15-.075-.886-.438-1.024-.489-.137-.051-.237-.075-.337.075-.1.15-.387.489-.475.59-.088.102-.175.114-.325.039-.15-.075-.632-.233-1.204-.743-.445-.397-.745-.887-.832-1.038-.088-.15-.01-.23.066-.305.068-.067.15-.175.225-.263.075-.088.1-.15.15-.25.05-.1.025-.188-.013-.263-.038-.075-.337-.813-.462-1.114-.122-.297-.245-.256-.337-.256-.088 0-.19 0-.291 0a.55.55 0 0 0-.397.188c-.138.15-.525.513-.525 1.25s.538 1.45.613 1.55c.075.1 1.057 1.613 2.562 2.26 1.148.492 1.4.394 1.64.364.48-.06 1.543-.63 1.761-1.243.218-.613.218-1.139.153-1.244-.065-.106-.238-.18-.388-.256"/>
+                                </svg>
+                                Chatea con nosotros por WhatsApp
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="quienes-somos">
+        <div class="container py-4 text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="h1 fw-bold text-white mb-4">¿Quiénes somos?</h2>
+                    <p class="text-secondary fs-5">
+                        Somos un equipo apasionado por crear celebraciones y eventos únicos. Creemos firmemente que una gran experiencia no tiene por qué costar una fortuna. Nos encargamos de todo el diseño y la coordinación para que tú solo tengas que disfrutar.
+                    </p>
+                    <p class="text-secondary fs-5 mt-3">
+                        Trabajamos de manera cercana, transparente y ágil, ofreciendo nuestros servicios en cualquier punto de la <strong class="text-white">Península Ibérica</strong> (actualmente no operamos en las islas).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center text-muted small">
+        <div class="container">
+            <p class="m-0">&copy; 2026 Tu Empresa de Eventos. Todos los derechos reservados.</p>
+            <p class="m-0 mt-2" style="font-size: 0.8rem; color: #555;">Servicios exclusivos para la Península Ibérica de momento.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
